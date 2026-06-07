@@ -310,47 +310,80 @@ Continue
 Music Submission
 </h2>
 
+<form
+action="https://formspree.io/f/meewagdw"
+method="POST"
+>
+
+<div class="form-group">
+<label>Real Name</label>
+<input name="real_name" type="text" required>
+</div>
+
+<div class="form-group">
+<label>Artist / Display Name</label>
+<input name="artist_name" type="text" required>
+</div>
+
+<div class="form-group">
+<label>Genre</label>
+<input name="genre" type="text" required>
+</div>
+
+<div class="form-group">
+<label>Instagram Handle</label>
+<input name="instagram" type="text">
+</div>
+
+<div class="form-group">
+<label>Main Goal Right Now</label>
+
+<select name="goal">
+
+<option>Grow my fanbase</option>
+<option>Get more streams</option>
+<option>Find producers</option>
+<option>Find artists to collaborate with</option>
+<option>Build my personal brand</option>
+<option>Book performances</option>
+<option>Get playlist placements</option>
+<option>Connect with industry people</option>
+<option>Monetize my music</option>
+<option>Everything above</option>
+
+</select>
+
+</div>
+
 <div class="form-group">
 <label>Song / Project Name</label>
-<input type="text" placeholder="Track Name">
+<input name="song_name" type="text">
 </div>
 
 <div class="form-group">
 <label>Music Link</label>
 <input
+name="music_link"
 type="text"
-placeholder="Spotify, SoundCloud, YouTube, Dropbox, Google Drive..."
+placeholder="Spotify, SoundCloud, YouTube, Dropbox..."
 >
 </div>
 
 <div class="form-group">
 <label>About You</label>
 
-<textarea placeholder="Tell us about yourself, your sound, and where you're trying to go."></textarea>
+<textarea
+name="about_artist"
+placeholder="Tell us about yourself and your goals."
+></textarea>
 
 </div>
 
-<div class="form-group">
-
-<div class="upload-box">
-
-<h3>Upload Cover Art / Files</h3>
-
-<p class="small">
-Drag files here or click below
-</p>
-
-<br>
-
-<input type="file">
-
-</div>
-
-</div>
-
-<button class="btn" onclick="nextPage(4)">
+<button class="btn" type="submit">
 Submit Application
 </button>
+
+</form>
 
 </div>
 
